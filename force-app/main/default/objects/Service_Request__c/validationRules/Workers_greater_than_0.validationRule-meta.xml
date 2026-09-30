@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workers_greater_than_0</fullName>
+    <active>true</active>
+    <description>To make sure user enters atleast 1 worker to be needed</description>
+    <errorConditionFormula>Number_of_workers__c &lt;= 0</errorConditionFormula>
+    <errorDisplayField>Number_of_workers__c</errorDisplayField>
+    <errorMessage>Please enter atleast 1 worker</errorMessage>
+</ValidationRule>
