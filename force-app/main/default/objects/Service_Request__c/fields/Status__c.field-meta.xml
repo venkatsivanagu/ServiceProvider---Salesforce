@@ -7,23 +7,6 @@
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
-        <valueSetDefinition>
-            <sorted>false</sorted>
-            <value>
-                <fullName>Cancelled</fullName>
-                <default>false</default>
-                <label>Cancelled</label>
-            </value>
-            <value>
-                <fullName>Matched</fullName>
-                <default>false</default>
-                <label>Matched</label>
-            </value>
-            <value>
-                <fullName>New</fullName>
-                <default>false</default>
-                <label>New</label>
-            </value>
-        </valueSetDefinition>
+        <valueSetName>Service_request_global_pick_list</valueSetName>
     </valueSet>
 </CustomField>

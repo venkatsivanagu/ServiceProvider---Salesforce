@@ -21,8 +21,13 @@
             </value>
             <value>
                 <fullName>Pending</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
             </value>
         </valueSetDefinition>
     </valueSet>

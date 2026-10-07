@@ -31,13 +31,29 @@
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>
-            <field>Worker__c.Status__c</field>
+            <field>Worker__c.Activation_requested__c</field>
             <operation>equals</operation>
-            <value>Active</value>
+            <value>True</value>
         </criteriaItems>
     </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Update</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
-    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Rejection</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>uncheck</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>true</finalRejectionRecordLock>
     <label>Change of status</label>
     <processOrder>1</processOrder>
     <recordEditability>AdminOnly</recordEditability>
